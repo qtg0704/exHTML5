@@ -9,23 +9,8 @@
   background-color: silver;
 }
 
-.visual{
-  background-color: blue;
-}
-.main{
-  background-color: orange;
-}
-.slogan{
-  background-color: red;
-}
-.footer-bg{
-  background-color: gray;
-}
-.footer{
-  background-color: pink;
-}
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -178,7 +163,6 @@ a{
 }
 .visual-text{
   width: 500px;
-  background-color: yellow;
   animation-name: textAni;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -186,17 +170,15 @@ a{
 }
 /* 메인 */
 .main{
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
   padding: 30px;
-  height: 60vh;
+  min-height: 400vh; /*최소높이*/
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;/*메인축 정렬(축에 따라 다름)*/
  /* align-items교차축 정렬*/
-
-}
-.group{
-  background-color: aqua;
 }
 .group1{
   width: 250px;
@@ -209,6 +191,77 @@ a{
 .group3{
   width: 190px;
 }
+/* 로그인 */
+.login{
+  background-color: rgba(240,81,11,1);
+  background-image: radial-gradient(circle at right top, rgba(240,128,16,1),rgba(240,81,11,1));
+  border-radius: 5px;
+  padding:10px;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+
+.login-form, .sign{
+  background-color: #fff;
+
+}
+.login-form{
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset{
+  position: relative;
+  border-bottom:1px solid #aaa;
+  padding-bottom:10px;
+
+}
+.user-email{
+  margin-bottom: 5px;
+}
+.login-form [for="userEmail"], 
+.login-form [for="userPw"]{
+  display:inline-block;
+  width: 4em;
+}
+.login-form [type="email"], 
+.login-form [type="password"]{
+  width: 95px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 0.5em;
+  border-radius: 5px;
+}
+.sign{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 5px 5px;
+  padding:10px;
+}
+.sign .icon-right-open::before{
+  color: rgba(240,81,11,1);
+}
+.login-heading{
+  margin-bottom:15px;
+  color:#ff0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.btn-login{
+  background-color:  rgba(240,81,11,1);
+  border:1px solid rgba(240,128,16,1);
+  width: 50px;
+  height: 53px;
+  padding: 0;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  color:white;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
