@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko-KR"> <!--스크린리더(주언어 설정)-->
+<html lang="ko-KR">
+<!--스크린리더(주언어 설정)-->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>웹카페-HTML5,CSS3,Standards,Accessibility</title> <!--유니크하게, 핵심, seo(검색엔진최적화)-->
+  <title>웹카페-HTML5,CSS3,Standards,Accessibility</title>
+  <!--유니크하게, 핵심, seo(검색엔진최적화)-->
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery.min.js" defer></script> <!--defer선언 할것-->
-  <script src="js/menu-tab.js" defer></script> 
+  <script src="js/jquery.min.js" defer></script>
+  <!--defer선언 할것-->
+  <script src="js/menu-tab.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <header class="header">
-      <h1 class="logo"><a href="/"><img src="./images/logo.png" alt="Web Cafe"/></a></h1>
+      <h1 class="logo"><a href="/"><img src="./images/logo.png" alt="Web Cafe" /></a></h1>
       <ul class="member">
         <li><a href="/">홈</a></li>
         <li><span aria-hidden="true">:</span><a href="/">로그인</a></li>
@@ -22,106 +27,106 @@
       <nav class="navigation">
         <h2 class="a11y-hidden">메인 메뉴</h2>
         <ul class="menu">
-            <li class="menu-item menu-act" >
-              <a href="/" role="button" class="btn-menu">HTML에 대해</a>
-              <ul class="sub-menu sub-menu1">
-                <li>
-                  <a href="#">HTML5 소개</a>
-                </li>
-                <li>
-                  <a href="#">레퍼런스 소개</a>
-                </li>
-                <li>
-                  <a href="#">활용예제</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="/" role="button" class="btn-menu">CSS에 대해</a>
-              <ul class="sub-menu sub-menu2">
-                <li>
-                  <a href="#">CSS 소개</a>
-                </li>
-                <li>
-                  <a href="#">CSS2 VS CSS3</a>
-                </li>
-                <li>
-                  <a href="#">CSS 애니메이션</a>
-                </li>
-                <li>
-                  <a href="#">CSS Framework</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item" >
-              <a href="/" role="button" class="btn-menu">웹표준</a>
-              <ul class="sub-menu sub-menu3">
-                <li>
-                  <a href="#">웹표준 이란?</a>
-                </li>
-                <li>
-                  <a href="#">W3C</a>
-                </li>
-                <li>
-                  <a href="#">HTML5의 현재와 미래</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item" >
-              <a href="/" role="button" class="btn-menu">웹 접근성</a>
-              <ul class="sub-menu sub-menu4">
-                <li>
-                  <a href="#">웹 접근성의 개요</a>
-                </li>
-                <li>
-                  <a href="#">장애 환경의 이해</a>
-                </li>
-                <li>
-                  <a href="#">장차법</a>
-                </li>
-                <li>
-                  <a href="#">웹 접근성 품질마크</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item" >
-              <a href="/" role="button" class="btn-menu">묻고 답하기</a>
-              <ul class="sub-menu sub-menu5">
-                <li>
-                  <a href="#">묻고 답하기</a>
-                </li>
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-                <li>
-                  <a href="#">1대1 질문</a>
-                </li>
-                <li>
-                  <a href="#">웹표준</a>
-                </li>
-                <li>
-                  <a href="#">웹 접근성</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item" >
-              <a href="/" role="button" class="btn-menu">자료실</a>
-              <ul class="sub-menu sub-menu6">
-                <li>
-                  <a href="#">공개 자료실</a>
-                </li>
-                <li>
-                  <a href="#">이미지 자료실</a>
-                </li>
-                <li>
-                  <a href="#">웹표준 자료실</a>
-                </li>
-                <li>
-                  <a href="#">웹 접근성 자료실</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <li class="menu-item menu-act">
+            <a href="/" role="button" class="btn-menu">HTML에 대해</a>
+            <ul class="sub-menu sub-menu1">
+              <li>
+                <a href="#">HTML5 소개</a>
+              </li>
+              <li>
+                <a href="#">레퍼런스 소개</a>
+              </li>
+              <li>
+                <a href="#">활용예제</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="/" role="button" class="btn-menu">CSS에 대해</a>
+            <ul class="sub-menu sub-menu2">
+              <li>
+                <a href="#">CSS 소개</a>
+              </li>
+              <li>
+                <a href="#">CSS2 VS CSS3</a>
+              </li>
+              <li>
+                <a href="#">CSS 애니메이션</a>
+              </li>
+              <li>
+                <a href="#">CSS Framework</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="/" role="button" class="btn-menu">웹표준</a>
+            <ul class="sub-menu sub-menu3">
+              <li>
+                <a href="#">웹표준 이란?</a>
+              </li>
+              <li>
+                <a href="#">W3C</a>
+              </li>
+              <li>
+                <a href="#">HTML5의 현재와 미래</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="/" role="button" class="btn-menu">웹 접근성</a>
+            <ul class="sub-menu sub-menu4">
+              <li>
+                <a href="#">웹 접근성의 개요</a>
+              </li>
+              <li>
+                <a href="#">장애 환경의 이해</a>
+              </li>
+              <li>
+                <a href="#">장차법</a>
+              </li>
+              <li>
+                <a href="#">웹 접근성 품질마크</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="/" role="button" class="btn-menu">묻고 답하기</a>
+            <ul class="sub-menu sub-menu5">
+              <li>
+                <a href="#">묻고 답하기</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">1대1 질문</a>
+              </li>
+              <li>
+                <a href="#">웹표준</a>
+              </li>
+              <li>
+                <a href="#">웹 접근성</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="/" role="button" class="btn-menu">자료실</a>
+            <ul class="sub-menu sub-menu6">
+              <li>
+                <a href="#">공개 자료실</a>
+              </li>
+              <li>
+                <a href="#">이미지 자료실</a>
+              </li>
+              <li>
+                <a href="#">웹표준 자료실</a>
+              </li>
+              <li>
+                <a href="#">웹 접근성 자료실</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </header>
     <div class="visual">
@@ -137,8 +142,10 @@
             <fieldset>
               <legend>회원 로그인 폼</legend>
               <div class="user-email">
-                <label for="userEmail">아이디</label> <!--명시적 레이블-->
-                <input type="email" id="userEmail" name="userEmail" required placeholder="guest@web.com"><!--email형식 모던브라우저에서 사용-->
+                <label for="userEmail">아이디</label>
+                <!--명시적 레이블-->
+                <input type="email" id="userEmail" name="userEmail" required placeholder="guest@web.com">
+                <!--email형식 모던브라우저에서 사용-->
               </div>
               <div class="user-pw">
                 <label for="userPw">비밀번호</label>
@@ -152,7 +159,19 @@
             <li><a href="/"><span class="icon-right-open"></span>아이디/비번 찾기</a></li>
           </ul>
         </section>
-       
+        <h2 class="a11y-hidden">유효성 검사 배너</h2>
+        <ul class="validation-list">
+          <li>
+            <a class="val-1" href="https://validator.w3.org/" target="_blank" title="마크업 유효성 검사 사이트로 이동(새창)">
+              W3C Markup Validation
+            </a>
+          </li>
+          <li>
+            <a class="val-1" href="https://jigsaw.w3.org/css-validator/" target="_blank" title="CSS 유효성 검사 사이트로 이동(새창)">
+              CSS Validation Service
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="group group2">그룹2</div>
       <div class="group group3">그룹3</div>
@@ -163,4 +182,5 @@
     </div>
   </div>
 </body>
+
 </html>

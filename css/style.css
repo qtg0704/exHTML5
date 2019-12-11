@@ -260,7 +260,21 @@ a{
   top:0;
   right:0;
 }
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top: 25px;
+}
 
+
+.val-1{
+  display:block;
+  margin-bottom: 10px;
+  border:1px solid #aaa;
+  padding:8px 10px 8px 45px;
+  border-radius: 30px;
+  background: url(./images/validation_icon.png) no-repeat 18px 50%, #ccc linear-gradient(180deg, #ccc,#eee);
+  
+}
 
 /* 슬로건 */
 .slogan{
