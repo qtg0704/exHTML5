@@ -264,8 +264,6 @@ a{
 .validation-list{
   margin-top: 25px;
 }
-
-
 .val-1{
   display:block;
   margin-bottom: 10px;
@@ -275,6 +273,45 @@ a{
   background: url(./images/validation_icon.png) no-repeat 18px 50%, #ccc linear-gradient(180deg, #ccc,#eee);
   
 }
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background: #ccc linear-gradient(#ccc,#eee);
+}
+.term-heading{
+  margin-bottom:10px;
+  font-weight: 700;
+  font-size:1.6rem;
+}
+.term-list{
+  width: 220px;
+}
+.term-list-subject, .term-list-brief{
+  float: right;
+  width: 145px;
+}
+.term-list-subject{
+  color: #296897;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.term-list-thumnail{
+  float: left;
+ }
+ .term-list-thumnail img{
+   vertical-align: middle; /* 이미지 하단 갭이 사라짐. */
+ }
+ .term-list::after{ /* float 영향권에서 벗어남.(클래스 모듈로 선언하면 편해짐 ex).Clearfix::after */
+   content: "";
+   display: block;
+   clear: both;
+ }
+ /*.clearfix{ float의 영향권에서 벗어남. (마크업이 더러워짐)
+   clear: both;
+ }*/
 
 /* 슬로건 */
 .slogan{
