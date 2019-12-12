@@ -315,7 +315,7 @@ a{
 
  /* 검색 폼 */
  .search-form{
-  background:  #ccc linear-gradient(#ccc,#eee);
+  background: #ccc linear-gradient(#ccc,#eee);
   padding: 15px 25px 10px;
   border: 1px solid #aaa;
   border-bottom-color: #fff;
@@ -345,6 +345,68 @@ a{
   height: 24px;
   margin-left: 2px;
 }
+/* 공지사항 및 자료실 */
+.board{
+  margin-top: 20px;
+  position: relative;
+  padding-top: 45px;
+}
+.board [class*="-list"],
+.board [class*="-more"]{
+  display: none;
+}
+.tab-act [class*="-list"],
+.tab-act [class*="-more"]{
+  display: block !important; /* 우선순위 무시 */
+}
+.tab{
+  border:1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  color: #666;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+.tab-act .tab{
+  background: #fff;
+  border-color: rgb(240,81,11) rgb(240,81,11) #fff rgb(240,81,11);
+  color: rgb(240,81,11);
+  z-index: 10;
+  outline: 0;
+}
+.notice-heading{
+  left: 0;
+}
+.pds-heading{
+  left: 72px;
+}
+.board [class*="-list"] li{
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.board [class*="-list"] a{
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 말줄임표 생성 */
+  padding: 5px 0;
+}
+.board [class*="-more"]{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.board .icon-plus::before{
+  color: hsla(110, 70%, 30%, 1)
+}
+
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
