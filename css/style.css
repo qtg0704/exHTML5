@@ -501,6 +501,7 @@ a{
   position: absolute;
   top: 3px;
   right: 0;
+  font-size: 0;
 }
 .btn-event-prev, .btn-event-next{
   width: 19px;
@@ -509,15 +510,42 @@ a{
   padding: 0;
   background-image: url("./images/back_forward.png");
   background-repeat: no-repeat;
+  font-size: 1.4rem;
 }
 .btn-event-prev{
   background-position: 0 0;
 }
 .btn-event-next{
   background-position: -36px 0;
+  margin-left: 5px;
 }
 .related{
   margin-top: 10px;
+}
+.related-list{
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  /*transition-timing-function: ease-in-out; 가속도 */
+  transition: all 0.4s 0s ease-in-out;
+  margin-top: 10px;
+}
+.related-list a:hover{
+  color: rgb(240,81,11);
+}
+.related-list:hover{
+  height: 147px;
+  padding: 10px 0;
+}
+.related-list li{
+  padding: 2px;
+}
+.related-list a{
+  line-height: 21px;
+  display: block;
+  text-indent: 1em;
 }
 /* 슬로건 */
 .slogan{
