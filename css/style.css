@@ -5,9 +5,6 @@
 @import url("./reset.css"); 
 @import url("./animation.css");
 
-.container{
-  
-}
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend{
@@ -477,7 +474,7 @@ a{
   position: relative;
   border-bottom: 1px solid #aaa;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -547,6 +544,58 @@ a{
   display: block;
   text-indent: 1em;
 }
+/* 인기 사이트 */
+.favorite{
+  margin-top: 20px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.favorite-list{
+  counter-reset: number;
+}
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.favorite-list li::before{
+  content: counter(number);  /* 순서 생성 간편 */
+  color:white;
+  font-size: 1.2rem;
+  padding: 0px 6px 2px 6px;
+  background: #aaa;
+  margin-right: 5px;
+  border-radius: 3px; 
+}
+.up, .stop, .down{
+  width: 9px;
+  height: 11px;
+  background-image: url("./images/rank.png");
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+.up{
+  background-position: 0 0;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+
+
+.favorite-more{
+  position: absolute;
+  padding: 8px;
+  top: 3px;
+  right: 2px;
+}
+
 /* 슬로건 */
 .slogan{
   padding: 10px 70px 10px 170px;
