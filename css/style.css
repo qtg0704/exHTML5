@@ -636,6 +636,39 @@ a{
   font-weight: 400;
 }
 .footer{
-  height: 30vh;
-  padding: 10px 0;
+  padding: 10px 100px 10px 170px;
+  position: relative;
+}
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+/* 가이드 링크 */
+.guide-list{
+  background: #7b8385;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  text-transform: uppercase; /* 대문자로 */
+  justify-content: space-around;
+  padding: 2px 15px;
+}
+.guide-list a{
+  display: block;
+  padding: 7px 10px;
+}
+/* 주소 및 저작권 */
+.address span{
+  margin-right: 1em;
+}
+.address{
+  margin: 10px 5px;
+}
+/* 웹표준 기술 로고 */
+.badge{
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
