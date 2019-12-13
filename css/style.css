@@ -516,7 +516,7 @@ a{
   background-position: 0 0;
 }
 .btn-event-next{
-  background-position: -36px 0;
+  background-position: -36px 0; /* 스프라이트 이미지 */
   margin-left: 5px;
 }
 .related{
