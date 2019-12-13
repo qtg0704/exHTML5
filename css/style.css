@@ -491,6 +491,17 @@ a{
   height: 100%;
   background: url("./images/coffee.png");
 }
+
+.event-related{
+  padding: 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+
+}
+.event{
+  border-bottom: 1px solid #aaa;
+}
 /* 푸터 */
 .footer-bg{
   background: #ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%,  #fff 100%);
